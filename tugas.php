@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studi Kasus Client Side - Personal Website</title>
-    <link rel="icon" type="image/png" href="">
+    <link rel="icon" type="image/x-icon" href="punyakulogo.png">
 </head>
 <body>
     <div class="isi-konten">
+
+        <div class="header">
+            <h1>Selamat Datang Di Personal Website Saya</h1>
+        </div>
 
         <div class="foto-profil">
             <img src="fotoprofil.jpg" alt="Foto Profil" width="200" height="250">
@@ -42,10 +46,17 @@
                         </div>';
                 }
             ?>
-           
         </div>
-
     </div>
 
 </body>
+<footer>
+    <div class="footerd">
+        <?php
+            date_default_timezone_set("Asia/Jakarta");
+            echo "Waktu Sekarang : " . date("h:i:s d-m-Y")."<br>"; ;
+            echo "Dibuat oleh Nafi Maulau Auditya Vindra";
+        ?>
+    </div>
+</footer>
 </html>
